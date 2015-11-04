@@ -1,0 +1,13 @@
+<Alloy>
+	<View layout="vertical" class="container" height="Ti.UI.FILL" bottom="35">
+		<Require type="view" src="_header" id="headerView"/>   
+		<View layout="horizontal" height="35" left="15" top="15">
+			<ImageView image="/images/about.png" width="30" /> 
+			<Label id="settings" class="titleLabel">Settings</Label>
+			<Label class="titleLabel"> > </Label>
+			<Label class="titleLabel">About Resicon</Label>
+		</View> 
+		<View width="90%" class="hr" />
+		 
+	</View> 
+</Alloy>

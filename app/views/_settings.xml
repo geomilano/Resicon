@@ -1,0 +1,13 @@
+<Alloy>
+	<View layout="vertical" class="container" height="Ti.UI.FILL" bottom="35">
+		<Require type="view" src="_header" id="headerView"/>  
+		<View layout="horizontal" height="35" left="15" top="15">
+			<ImageView image="/images/settings.png" width="30" /> 
+			<Label class="titleLabel">Settings</Label>
+		</View> 
+		<View width="90%" class="hr" />
+		<View height="Ti.UI.SIZE" layout="vertical" id="pageContent" /> 
+		<Button id="logoutButton" borderRadius="5" backgroundColor="#60BACA"  title="Logout"  width="70%" top="10" bottom="10" height="40" color="#ffffff" />
+	</View> 
+	<View bottom="0" id="contentView" height="Ti.UI.SIZE" width="Ti.UI.FILL" platform="android" />
+</Alloy>

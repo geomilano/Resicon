@@ -1,0 +1,10 @@
+<Alloy>
+	<View layout="horizontal" top="10" height="60" width="Ti.UI.FILL">
+		<ImageView image="/images/headshot.png" width="60" top="0" left="10" />
+			
+		<View layout="vertical"  top="0" left="0">
+			<Label class="titleLabel" id="titleLabel"></Label>
+			<Label class="description" id="unitLabel" />
+		</View>
+	</View>
+</Alloy>

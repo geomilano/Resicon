@@ -1,0 +1,36 @@
+<Alloy>
+	<View layout="vertical" class="container" height="Ti.UI.FILL" bottom="55">
+		<Require type="view" src="_header" id="headerView"/>  
+		<View layout="horizontal" height="35" left="15" top="15">
+			<ImageView image="/images/booking.png" width="30" /> 
+			
+			<Label id="facilitiesBooking" class="titleLabel">Facilities Booking</Label>
+			<Label class="titleLabel"> > </Label>
+			<Label class="titleLabel">Confirm Booking</Label>
+		</View> 
+		<View width="90%" class="hr" />
+		<ScrollView class="wfill hfill vert" top="5"   scrollType="vertical"> 
+			<Label class="titleLabel" id="informationText">Information :</Label> 
+			<Label class="titleLabel" top="10" left="10">Select Time</Label>
+			<TableView id="bookingTbl" width="Ti.UI.FILL"  height="40%" contentWidth="Ti.UI.FILL" contentHeight="Ti.UI.SIZE" />
+		
+			<Label class="titleLabel" left="10">Minutes remind before event start</Label>
+			<TextField backgroundColor="white" class="textfield" id="RemindMinutes" hintText="Please enter minutes. Ignore if doesn't want to get remind" />
+		
+			<Label class="titleLabel" left="10">Remark</Label>
+			<TextArea id="remarkTextArea" class="textfield" textAlign="left" hintText="Please fill in remark if any" value="" width="Ti.UI.FILL"  height="100" right="10" suppressReturn="false" >
+				<KeyboardToolbar platform="ios">
+					<Toolbar>
+						<Items> 
+							<FlexSpace/>
+							<Button onClick="hideKeyboard" backgroundImage="/images/btn-down.png" textAlign="right" right="5" width="20" height="20"  />
+						</Items>
+					</Toolbar>
+				</KeyboardToolbar>
+			</TextArea>
+			<Button id="submitButton" borderRadius="5" backgroundColor="#60BACA"  title="Submit Booking"  width="70%" top="10" bottom="10" height="40" color="#ffffff" />
+			
+		</ScrollView>
+	</View> 
+	<View bottom="0" id="contentView" height="Ti.UI.SIZE" width="Ti.UI.FILL" platform="android" />
+</Alloy>

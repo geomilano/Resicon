@@ -1,0 +1,284 @@
+/*
+
+This is your global styles file. Selectors and rules you define
+here will be applied throughout your app. However, these rules
+have the lowest priority of any style settings.
+
+For more information, see the "Style Priorities" section of
+http://docs.appcelerator.com/titanium/latest/#!/guide/Alloy_Styles_and_Themes
+
+For example, the following would apply to all labels, windows,
+and text fields (depending on platform) in your app unless you
+overrode the settings with other TSS, XML, or JS settings:
+*/
+'Label[platform=android]': {
+	color: '#000' // all platforms except Android default to black
+}
+
+'Window': {
+	backgroundColor: '#FFFFFF' // white background instead of default transparent
+}
+
+'TextField[platform=android]': {
+	height: Ti.UI.SIZE //
+},
+".ftText" : {
+	color: '#60BACA', 
+	font:{
+		fontSize: '12dp'
+	},
+},
+".titleLabel" : {
+	color: "#60BACA",
+	font:{
+		fontSize: '14dp',
+	},
+	textAlign: "left",
+	top: 10,
+	left:5,
+	width : Ti.UI.SIZE,
+	height : Ti.UI.SIZE
+},
+".description" : {
+	color: "#60BACA",
+	font:{
+		fontSize: '12dp'
+	},
+	textAlign: "left",
+	left:5,
+	width : Ti.UI.SIZE,
+	height : Ti.UI.SIZE
+},
+
+".hr" :{
+	width: Ti.UI.FILL,
+	height: '1',
+	backgroundColor: '#60BACA',
+},
+'NavigationWindow':{
+	backgroundColor: '#ffffff',
+},
+".line":{
+	height: '1',
+	backgroundColor: '#ccc',
+	bottom: '0',
+},
+".grey_line":{
+	height: '0.5',
+	width: Ti.UI.FILL,
+	backgroundColor: '#C6C8CA',
+},
+ 
+"#activityIndicator" : { 
+	 top:30,
+	 left:30,
+	 width:60,
+},
+".container": {
+	backgroundColor:"#FFFFFF",
+	layout: 'vertical',
+	width: Ti.UI.FILL,
+	fullscreen: true,
+},
+"#header": {
+	width: Ti.UI.FILL,
+	height: "45",
+	top: '0',
+},
+"#main":{
+	width: Ti.UI.FILL,
+}, 
+".big_font":{
+	font: {fontSize: '20dp'},
+},
+".normal_font":{
+	font: {fontSize: '16dp'},
+},
+".medium_font":{
+	font: {fontSize: '14dp'},
+},
+".small_font":{
+	font: {fontSize: '12dp'},
+},
+".textfield" :{
+	 font:{
+		fontSize: '14dp'
+	},
+	 color: '#60BACA',
+	 backgroundColor: '#ffffff',
+	 width:'90%',
+	 height: '35dp',
+	 bottom:5,
+	 left:10,
+	 textAlign: "left",
+	 borderColor : "#DDF0F3",
+	 borderRadius : 3,
+	 tintColor: '#60BACA',
+	 keyboardType: Titanium.UI.KEYBOARD_DEFAULT,
+     returnKeyType: Titanium.UI.RETURNKEY_NEXT ,
+	 borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED
+},
+
+'.vert':{
+	layout: "vertical"
+},
+
+'.horz':{
+	layout: "horizontal"
+},
+
+'.wfill':{
+	width: Ti.UI.FILL
+},
+
+'.wsize':{
+	width: Ti.UI.SIZE
+},
+
+'.hfill':{
+	height: Ti.UI.FILL
+},
+
+'.hsize':{
+	height: Ti.UI.SIZE
+},
+
+'.padding':{
+	top: 10,
+	left: 10,
+	right: 10,
+	bottom: 10,
+},
+
+".padding-top":{
+	top: 10
+},
+
+".padding-left":{
+	left: 10
+},
+
+".padding-right":{
+	right: 10
+},
+
+".padding-bottom":{
+	bottom: 10
+}, 
+
+'.box':{
+	borderColor: "#60BACA",
+	backgroundColor: "#FBFBFB",
+},
+
+'.font_big':{
+	font:{
+		fontSize: 18
+	}
+},
+
+".rounded":{
+	borderRadius: 4
+},
+
+".bottom":{
+	bottom: 0
+},
+
+".top":{
+	top: 0
+},
+
+".right":{
+	right: 0
+},
+
+".left":{
+	left: 0
+},
+
+".h1":{
+	font:{
+		fontSize: 36
+	}
+},
+
+".h2":{
+	font:{
+		fontSize: 30
+	}
+},
+
+".h3":{
+	font:{
+		fontSize: 24
+	}
+},
+
+".h4":{
+	font:{
+		fontSize: 18
+	},
+},
+
+".h5":{
+	font:{
+		fontSize: 14
+	}
+},
+
+".h6":{
+	font:{
+		fontSize: 12
+	}
+},
+
+".normal-text":{
+	font:{
+		fontSize: 14
+	}
+},
+
+".small-text":{
+	font:{
+		fontSize: 10
+	}
+},
+
+".large-text":{
+	font:{
+		fontSize: 18
+	}
+},
+
+'.font_light_grey':{
+	color: "#9197a3 "
+},
+
+".black-line":{
+	backgroundColor: "#000",
+	width: Ti.UI.FILL,
+	height: 1	
+},
+
+".gray-line":{
+	backgroundColor: "#d2d3ce",
+	width: Ti.UI.FILL,
+	height: 1	
+},
+ 
+".white-line":{
+	backgroundColor: "#fff",
+	width: Ti.UI.FILL,
+	height: 1	
+},
+
+".bold":{
+	font: { fontWeight: 'bold'}
+},
+".darkgreyText" : {
+	color: "#5F5F5F"
+}
+'.themeBg' : {
+	backgroundColor: "#10844D"
+},

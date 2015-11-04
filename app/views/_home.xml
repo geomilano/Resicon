@@ -1,0 +1,8 @@
+<Alloy>
+	
+	<View class="container">
+		<Require type="view" src="_header" id="headerView"/> 
+		<View layout="vertical" height="Ti.UI.SIZE" id="tableMenu" top="30" />  
+	</View>
+	
+</Alloy>

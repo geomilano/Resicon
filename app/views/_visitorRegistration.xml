@@ -1,0 +1,78 @@
+<Alloy>
+	<View layout="vertical" class="container" height="Ti.UI.FILL" bottom="35">
+		<Require type="view" src="_header" id="headerView"/>  
+	 
+		<View layout="horizontal" height="35" width="Ti.UI.FILL" left="15" top="15">
+			<ImageView image="/images/register.png" width="30" /> 
+			<Label id="visitor" class="titleLabel" >Visitors</Label> 
+			<Label class="titleLabel"> > </Label>
+			<Label id="visitorInd" class="titleLabel">Visitor Registration</Label>
+		</View> 
+		
+		<View width="90%" zIndex="99" class="hr" />
+		
+	</View> 
+	<ScrollView  class="wfill hsize vert" contentWidth="Ti.UI.FILL" contentHeight="Ti.UI.SIZE" scrollType="vertical" top="120" bottom="35" scrollIndicatorStyle="">
+		 	 
+			<Label class="titleLabel" left="10">Name of visitor as per IC</Label>
+			<TextField backgroundColor="white" class="textfield" id="firstname" hintText="Please enter visitor name" />
+			 
+			 
+			<Label class="titleLabel" left="10" onClick="showIdTypePicker">ID Type</Label>
+			<View layout="horizontal" height="Ti.UI.SIZE" width="100%">
+				<Label onClick="showIdTypePicker" borderColor="#DDF0F3" borderRadius="3" top="5" bottom="5" left="10" color="#60BACA" id="idType_value" class='medium_font' text="  Please select" textAlign="left" height="35" width="40%"   />
+				<TextField backgroundColor="white" class="textfield" id="ic" width="auto" hintText="Please enter number" />
+			</View>
+			<View height="0" id="selectorView" top="0" backgroundColor="transparent" >
+				<Picker id="idTypePicker" onChange="changeIdType" visible="false" height="120" >
+					<PickerRow title="Identification Card"/>
+					<PickerRow title="Passport"/>
+			    </Picker>   
+			</View>	 
+			
+			<Label class="titleLabel" left="10">Vehicle Number</Label>
+			<TextField backgroundColor="white" class="textfield" id="vehicle" hintText="Please enter visitor's vehicle number" />
+			 
+			
+			<View class="wfill hsize vert" onClick="showDatePicker"> 
+				<Label class="titleLabel" left="10"  >Visiting Date</Label>
+				<Label borderColor="#DDF0F3" borderRadius="3" top="5" bottom="5" left="10" color="#60BACA" id="visitDate" class='medium_font' text="  Please enter visiting date" textAlign="left" height="35" width="90%"   />
+			 
+			</View>
+			
+			<View class="wfill hsize vert" onClick="showTimePicker"> 
+				<Label class="titleLabel" left="10"  >Visiting Time</Label>
+				<Label borderColor="#DDF0F3" borderRadius="3" top="5" bottom="5" left="10" color="#60BACA" id="visitTime" class='medium_font' text="  Please enter visiting time" textAlign="left" height="35" width="90%"   />
+				 
+			</View>
+			
+			<Label class="titleLabel" left="10">Visitor's Mobile Number</Label>
+			<TextField backgroundColor="white" class="textfield" id="mobile" hintText="+60" />
+			
+			<View class="wfill hsize"> 
+				<Button id="deleteButton" borderRadius="5" backgroundColor="#FF634B"  title="Delete"  width="40%" top="10" bottom="10" left="10" height="40" color="#ffffff" />
+				<Button id="saveButton" borderRadius="5" backgroundColor="#60BACA"  title="Save"  width="40%" top="10" bottom="10" right="10" height="40" color="#ffffff" />
+				
+			</View>
+		</ScrollView> 
+	<Toolbar platform="ios" bottom="200" extendBackground="true" borderTop="true" borderBottom="false" id="dateToolbar" visible="false">
+				<Items>  
+					<Button onClick="hideDatePicker" title="DONE" style="Titanium.UI.iPhone.SystemButtonStyle.DONE"   />
+				</Items>
+			</Toolbar>
+			<View height="0" bottom="200" id="selectorView" bottom="0"  zIndex="99"> 
+				<Picker id="datePicker"
+				          onChange="changeDate" 
+				          type="Ti.UI.PICKER_TYPE_DATE"  
+				          height="200"
+				           visible="false"> 
+				 </Picker>
+				 <Picker id="timePicker"
+				          onChange="changeTime" 
+				          type="Ti.UI.PICKER_TYPE_TIME" 
+				           height="200"
+				           visible="false">  
+				 </Picker>
+			</View>	 
+	<View bottom="0" id="contentView" height="Ti.UI.SIZE" width="Ti.UI.FILL" platform="android" />
+</Alloy>

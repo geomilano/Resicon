@@ -1,0 +1,20 @@
+<Alloy>  
+	<ScrollView id="main" layout="vertical" scrollType="vertical">
+		
+		<View layout="vertical" id="loginScrollView" height="320" top="20" width="100%"> 
+			<ImageView  width='Ti.UI.FILL' image="/images/logo.png" id="loginLogo" width="150" />
+			<TextField backgroundColor="white" borderRadius="3" id="username" value="user1@demo1.com" class="username" hintText="Email Address" />
+			<TextField backgroundColor="white" borderRadius="3" id="password" value="password" hintText="Password" />
+		</View>
+			
+		<View layout="horizontal" height="30" width="Ti.UI.FILL" >
+			<View width="50%" >
+		 		<Label top="0" class="ftText" onTouchend="doForgotPassword" left="25">Forgot Password?</Label>
+			</View>
+			<View width="auto">
+		    	<Label top="0" class="ftText" onTouchend="goCreateAccount" right="25">First Time Login?</Label>
+		   	</View> 
+		</View>    
+		<Button id="loginAccountButton" borderRadius="5" backgroundColor="#60BACA"  title="Login"  width="70%" top="10" bottom="10" height="40" color="#ffffff" /> 
+	</ScrollView>  
+</Alloy>

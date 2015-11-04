@@ -1,0 +1,98 @@
+<Alloy>
+	<Window class="container" title="" id="myWin" backButtonTitle="" navBarHidden="true">  
+		<View height="Ti.UI.FILL">
+	        <View layout="horizontal" height="50" width="Ti.UI.FILL" top="0" backgroundColor="#DEDEDE"  > 
+				<View left="0" width="20%">
+		         	<ImageView left='10' id="btnBack" width="25" height="25" image="/images/cross.png" />
+		   		</View>
+		     	<View width="60%">
+		     		<Label id="pageTitle" height="Ti.UI.SIZE"  textAlign="center">New Registration</Label>
+		     	</View>
+		 	</View>
+	       	<View zIndex="999" layout="vertical" id="loadingBar" height="0" width="120" borderRadius="15"  backgroundColor="#2E2E2E" >
+		        <ActivityIndicator  id="activityIndicator" />
+		    	<Label top="5" text="Loading" color="#ffffff" />
+		    </View>
+			<View layout="vertical" class="container" height="Ti.UI.FILL" top="50"> 
+				<View class="wfill hsize"  left="15" top="10"> 
+					<Label class="titleLabel">Please fill in your details below: </Label>
+				</View> 
+				<View width="90%" class="hr" />
+				
+				<ScrollView layout="vertical" width="Ti.UI.SIZE" height="Ti.UI.FILL" scrollType="vertical" scrollIndicatorStyle="">
+					
+					<Label class="titleLabel" left="10">Email Address</Label>
+					<TextField backgroundColor="white" class="textfield" id="email" hintText="Please enter your email" />
+					
+					<Label class="titleLabel" left="10">Password</Label>
+					<TextField backgroundColor="white" class="textfield" passwordMask="true" id="password1" hintText="Please enter your password" />
+					
+					<Label class="titleLabel" left="10">Confirm Password</Label>
+					<TextField backgroundColor="white" class="textfield"  passwordMask="true" id="password2" hintText="Please confirm your password" />
+					
+					
+				 	<Label class="titleLabel" top="10" left="10" onClick="showTitlePicker">Title</Label>
+					<Label onClick="showTitlePicker" borderColor="#DDF0F3" borderRadius="3" top="5" bottom="5" left="10" color="#60BACA" id="title_value" class='medium_font' text="  Please select" textAlign="left" height="35" width="90%"   />
+					<!--<View height="0" id="selectorTitleView" top="0" backgroundColor="transparent" >
+						<Picker id="titlePicker" onChange="changeTitle" visible="false" height="120" >
+							<PickerRow title="Mr"/>
+							<PickerRow title="Mrs"/>
+					    </Picker>   
+					</View>	 
+					-->
+					<Label class="titleLabel" left="10">First Name</Label>
+					<TextField backgroundColor="white" class="textfield" id="firstname" hintText="Please enter your first name" />
+					 
+					<Label class="titleLabel" left="10">Last Name</Label>
+					<TextField backgroundColor="white" class="textfield" id="lastname" hintText="Please enter your last name" />
+					
+					<Label class="titleLabel" left="10" onClick="showIdTypePicker">ID Type</Label>
+					<View layout="horizontal" height="Ti.UI.SIZE" width="100%">
+						<Label onClick="showIdTypePicker" borderColor="#DDF0F3" borderRadius="3" top="5" bottom="5" left="10" color="#60BACA" id="idType_value" class='medium_font' text="  Please select" textAlign="left" height="35" width="40%"   />
+						<TextField backgroundColor="white" class="textfield" id="ic" width="auto" hintText="Please enter number" />
+					</View>
+					<View height="0" id="selectorIdTypeView" top="0" backgroundColor="transparent" >
+					<!--	<Picker id="idTypePicker" onChange="changeIdType" visible="false" height="120" >
+							<PickerRow title="Identification Card"/>
+							<PickerRow title="Passport"/>
+					    </Picker> -->  
+					</View>	 
+					
+					<Label class="titleLabel" left="10" onClick="showGenderPicker">Gender</Label>
+					<Label onClick="showGenderPicker" borderColor="#DDF0F3" borderRadius="3" top="5" bottom="5" left="10" color="#60BACA" id="gender_value" class='medium_font' text="  Please select" textAlign="left" height="35" width="90%"   />
+					<View height="0" id="selectorView" top="0" backgroundColor="transparent" >
+					 
+					</View>	 
+					
+					<Label class="titleLabel" left="10">Mobile Number</Label>
+					<TextField backgroundColor="white" class="textfield" id="mobile" hintText="Please enter your mobile number" />
+					
+					<Label class="titleLabel" left="10"  onClick="showDatePicker">Date of Birth</Label>
+					<TextField backgroundColor="white" class="textfield" id="dob" onClick="showDatePicker" editable="false" hintText="Please enter your birth date" />
+					
+					
+					<Label class="titleLabel" left="10">Country</Label>
+					<Label onClick="showCountryPicker" borderColor="#DDF0F3" borderRadius="3" top="5" bottom="5" left="10" color="#60BACA" id="country_value" class='medium_font' text="  Malaysia" textAlign="left" height="35" width="90%"   />
+					
+					<Button id="saveButton" onClick="save" borderRadius="5" backgroundColor="#60BACA"  title="Submit"  width="70%" top="10" bottom="10" height="40" color="#ffffff" />
+				</ScrollView>
+				
+			</View> 
+			<Toolbar platform="ios" bottom="200" extendBackground="true" borderTop="true" borderBottom="false" id="dateToolbar" visible="false">
+				<Items>  
+					<Button onClick="hideDatePicker" title="DONE" style="Titanium.UI.iPhone.SystemButtonStyle.DONE"   />
+				</Items>
+			</Toolbar>
+			<View height="0" bottom="200" id="selectorView" bottom="0"  zIndex="99">
+				 
+				 <Picker id="datePicker"
+				          onChange="changeDate" 
+				          type="Ti.UI.PICKER_TYPE_DATE" 
+				           height="200"
+				           visible="false">  
+				 </Picker>
+			</View>	 
+      	</View>
+      	
+	</Window>
+</Alloy>

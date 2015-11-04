@@ -1,0 +1,18 @@
+<Alloy>
+	<View layout="vertical" class="container" height="Ti.UI.FILL" bottom="35">
+		<Require type="view" src="_header" id="headerView"/>  
+		<View layout="horizontal" height="35" width="Ti.UI.FILL" left="15" top="15">
+			<ImageView image="/images/report.png" width="30" /> 
+			<Label class="titleLabel" width="65%">Report Fault</Label>
+			<Label id="newReport" class="titleLabel" right="0" textAlign="right">+ New</Label>
+		</View> 
+		<View width="90%" class="hr" />
+		<View class="wfill hsize horz" bottom="10">
+			<Label class="titleLabel" id="informationText">View My Report :</Label> 
+			<Label class="titleLabel" id="totalText">0 record(s)</Label>
+		</View> 
+		<ScrollView id="list" class="vert wfill hsize"  contentWidth="Ti.UI.FILL" contentHeight="Ti.UI.SIZE" /> 
+		
+	</View> 
+	<View bottom="0" id="contentView" height="Ti.UI.SIZE" width="Ti.UI.FILL" platform="android" />
+</Alloy>

@@ -1,0 +1,6 @@
+<Alloy>
+	<Window class="container" title="" id="homeWin" backButtonTitle="" navTintColor="#60BACA" navBarHidden="true"> 
+        <Require type="view" src="_home" id="homeView"/> 
+        
+	</Window>
+</Alloy>

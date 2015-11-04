@@ -1,0 +1,18 @@
+<Alloy>
+	<View layout="vertical" class="container" height="Ti.UI.FILL" bottom="35">
+		<Require type="view" src="_header" id="headerView"/>  
+		<View layout="horizontal" height="35" left="15" top="15">
+			<ImageView image="/images/booking.png" width="30" /> 
+			
+			<Label id="facilities" class="titleLabel">Facilities</Label>
+			<Label class="titleLabel"> > </Label>
+			<Label class="titleLabel">Facilities Booking</Label>
+		</View> 
+		<View width="90%" class="hr" />
+		<View layout="vertical" height="280"  width="90%" platform="android"  id="calendar" ></View>
+		<View layout="vertical" height="280"  width="Ti.UI.FILL" platform="ios"  id="calendar" ></View>
+		<Label class="titleLabel" id="informationText">Please pick the date to book</Label> 
+		<!--<TableView id="bookingTbl" width="Ti.UI.FILL"  height="Ti.UI.SIZE" contentWidth="Ti.UI.FILL" contentHeight="Ti.UI.SIZE" />-->
+	</View> 
+	<View bottom="0" id="contentView" height="Ti.UI.SIZE" width="Ti.UI.FILL" platform="android" />
+</Alloy>

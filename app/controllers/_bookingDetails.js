@@ -1,0 +1,3 @@
+function hideKeyboard(){
+	$.remarkTextArea.blur(); 
+}

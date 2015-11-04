@@ -1,0 +1,27 @@
+<Alloy>
+	<View layout="vertical" class="container" height="Ti.UI.FILL" bottom="35">
+		<Require type="view" src="_header" id="headerView"/>  
+		<View layout="horizontal" height="35" left="15" top="15">
+			<ImageView image="/images/search.png" width="30" /> 
+			<Label class="titleLabel">Search</Label>
+		</View> 
+		<View width="90%" class="hr" />
+		
+		<ScrollView layout="vertical" width="Ti.UI.SIZE" height="Ti.UI.FILL" scrollType="vertical" scrollIndicatorStyle="">
+			<Label class="titleLabel" left="10">Report</Label>
+			<TextField backgroundColor="white" class="textfield" id="firstname" hintText="Please enter report number" />
+			 
+			<Label class="titleLabel" left="10">Issue</Label>
+			<TextField backgroundColor="white" class="textfield" id="firstname" hintText="Please enter issue number" />
+			 
+			<Label class="titleLabel" left="10">Visitor Registration</Label>
+			<TextField backgroundColor="white" class="textfield" id="firstname" hintText="Please enter visitor confirmation number" />
+			 
+			 <Label class="titleLabel" left="10">Facilities Booking</Label>
+			<TextField backgroundColor="white" class="textfield" id="firstname" hintText="Please enter facilities booking number" />
+			
+			<Button id="saveButton" borderRadius="5" backgroundColor="#60BACA"  title="Search"  width="70%" top="10" bottom="10" height="40" color="#ffffff" />
+		</ScrollView>
+	</View> 
+	<View bottom="0" id="contentView" height="Ti.UI.SIZE" width="Ti.UI.FILL" platform="android" />
+</Alloy>

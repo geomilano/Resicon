@@ -1,0 +1,35 @@
+<Alloy>
+	<View layout="vertical" class="container" height="Ti.UI.FILL" bottom="35">
+		<Require type="view" src="_header" id="headerView"/>  
+		<View layout="horizontal" height="35" width="Ti.UI.FILL" left="15" top="15">
+			<ImageView image="/images/report.png" width="30" /> 
+			<Label id="reports" class="titleLabel" >Report Fault</Label> 
+			<Label class="titleLabel"> > </Label>
+			<Label id="reportInd" class="titleLabel">New Report</Label>
+		</View> 
+		<View width="90%" class="hr" />
+		<ScrollView layout="vertical" width="Ti.UI.SIZE" height="Ti.UI.FILL" scrollType="vertical" scrollIndicatorStyle="">
+			<Label class="titleLabel" top="10" left="10" >Faulty Type</Label>
+			<Label borderColor="#DDF0F3" borderRadius="3" top="5" bottom="5" left="10" color="#60BACA" id="faultyType_value" class='medium_font' text="  " textAlign="left" height="35" width="90%"   />
+			
+		 	<Label class="titleLabel" top="10" left="10" >Location</Label>
+		 	<TextField backgroundColor="white" class="textfield" id="location" hintText="Please fill in faulty location" />
+		 	
+		 	<Label class="titleLabel" top="10" left="10" >Remark</Label>
+		 	<TextArea id="remark" class="h6 wfill" class="textfield"  hintText="Please fill in faulty remark" value=""  left="10" right="10" height="100" suppressReturn="false" >
+				<KeyboardToolbar platform="ios">
+					<Toolbar>
+						<Items> 
+							<FlexSpace/>
+							<Button onClick="hideKeyboard" backgroundImage="/images/btn-bottom.png" right="5" width="20" height="20"  />
+						</Items>
+					</Toolbar>
+				</KeyboardToolbar>
+			</TextArea>
+			
+		 
+			<Button id="saveButton" borderRadius="5" backgroundColor="#60BACA"  title="Submit"  width="70%" top="10" bottom="10" height="40" color="#ffffff" />
+		</ScrollView>
+	</View> 
+	<View bottom="0" id="contentView" height="Ti.UI.SIZE" width="Ti.UI.FILL" platform="android" />	
+</Alloy>

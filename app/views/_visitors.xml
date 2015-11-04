@@ -1,0 +1,19 @@
+<Alloy>
+	<View layout="vertical" class="container"   >
+		<Require type="view" src="_header" id="headerView"/>  
+	 
+		<View layout="horizontal" height="35" width="Ti.UI.FILL" left="15" top="15">
+			<ImageView image="/images/register.png" width="30" /> 
+			<Label class="titleLabel" width="65%">Visitor</Label>
+			<Label id="newVisitor" class="titleLabel" right="0" textAlign="right">+ New</Label>
+		</View> 
+		
+		<View width="90%" class="hr" />
+		<View class="wfill hsize horz" bottom="10">
+			<Label class="titleLabel" id="informationText">Below are past visitor list :</Label> 
+			<Label class="titleLabel" id="totalText">0 record(s)</Label>
+		</View>  
+	</View> 
+	<ScrollView id="list" class="wfill hsize vert" contentWidth="Ti.UI.FILL" contentHeight="Ti.UI.SIZE" top="155" bottom="35" /> 
+	<View bottom="0" id="contentView" class="vert hsize wfill"  platform="android" />
+</Alloy>

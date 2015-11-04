@@ -1,0 +1,16 @@
+<Alloy>
+	<View layout="vertical" class="container" height="Ti.UI.FILL" bottom="35">
+		<Require type="view" src="_header" id="headerView"/>  
+		<View layout="horizontal" height="35" left="15" top="15">
+			<ImageView image="/images/announcement.png" width="30" /> 
+			<Label class="titleLabel">Announcement</Label>
+		</View> 
+		<View width="90%" class="hr" />
+		<View class="wfill hsize horz" bottom="10">
+			<Label class="titleLabel" id="informationText">Below are latest announcement :</Label> 
+			<Label class="titleLabel" id="totalText">0 record(s)</Label>
+		</View> 
+		<ScrollView id="announcementSv"  width="Ti.UI.FILL"  height="Ti.UI.SIZE" contentWidth="Ti.UI.FILL" contentHeight="Ti.UI.SIZE" /> 
+	</View> 
+	<View bottom="0" id="contentView" height="Ti.UI.SIZE" width="Ti.UI.FILL" platform="android" />
+</Alloy>

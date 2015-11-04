@@ -1,0 +1,11 @@
+<Alloy>
+	<Window class="container" title="" id="myWin" backButtonTitle="" navBarHidden="true">  
+		<View height="Ti.UI.FILL">
+	       	<Require type="view" src="_settings" top="0" id="settingsView"/> 
+	       	<View width="Ti.UI.FILL" height="45" id="pageMenu"  onClick="showMenu" backgroundColor="#DDF0F3" bottom="0"> 
+		    	<Label color="#60BACA" height="20" top="10">More Options</Label>
+		    	<ImageView image="/images/btn-top.png" width="15" height="15" top="15" right="15" /> 
+	       	</View>
+      	</View>
+	</Window>
+</Alloy>

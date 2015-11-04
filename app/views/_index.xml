@@ -1,0 +1,9 @@
+<Alloy>
+	<Window id="root" title="" navBarHidden="true" class="container" height="Ti.UI.FILL" layout="composite" > 
+		
+		 <View class="wfill hsize vert"  >
+		 	<ImageView image="/images/bg_icon.png" opacity="0.5" class="wsize hsize" />
+		 	<Label textAlign="center" class="hsize wfill" color="#787878">Load Resicon Data...</Label>
+		 </View> 
+	</Window>
+</Alloy>

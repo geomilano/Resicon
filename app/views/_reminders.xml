@@ -1,0 +1,12 @@
+<Alloy>
+	<View layout="vertical" class="container" height="Ti.UI.FILL" bottom="35">
+		<Require type="view" src="_header" id="headerView"/>  
+		<View layout="horizontal" height="35" left="15" top="15">
+			<ImageView image="/images/reminder.png" width="30" /> 
+			<Label class="titleLabel">Reminders</Label>
+		</View> 
+		<View width="90%" class="hr" />
+		 
+	</View> 
+	<View bottom="0" id="contentView" height="Ti.UI.SIZE" width="Ti.UI.FILL" platform="android" />
+</Alloy>
